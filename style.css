@@ -1,5 +1,5 @@
 @font-face {
-   font-family: "Custom";
+   font-family: "SanAndreas";
    src: url(EduNSWACTFoundation-SemiBold.ttf) format('TrueType');
 }
 
@@ -27,7 +27,7 @@ body {
    cursor: pointer;
    font-size: 1.9rem;
    z-index: 9999;
-   font-family: 'Custom';
+   font-family: 'SanAndreas';
 }
 
 .navbar{
