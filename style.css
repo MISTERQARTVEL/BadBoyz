@@ -1,0 +1,153 @@
+@font-face {
+   font-family: "SanAndreas";
+   src: url(EduNSWACTFoundation-SemiBold.ttf) format('TrueType');
+}
+
+
+
+*{
+   padding: 0;
+   margin: 0;
+   transition: 0.5s;
+   
+}
+
+
+body {
+   background: #272727;
+   display: flex;
+   min-height: 100vh;
+   z-index: 9999;
+}
+
+#itm{
+   transition: 0.5s;
+   list-style: none;
+   margin: 20px;
+   cursor: pointer;
+   font-size: 1.9rem;
+   z-index: 9999;
+   font-family: 'SanAndreas';
+}
+
+.navbar{
+   width: 100%;
+   height: 80px;
+   background: rgb(107, 116, 111);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 999999999;
+   position: absolute;
+}
+
+a{
+   color: #fff;
+   font-size: 3.3rem;
+   text-decoration: none;
+   z-index: 9999;
+   transform: translateY(-4px);
+   font-family: cursive;
+}
+
+#logo{
+   color: lime;
+   z-index: 9999;
+}
+
+ul{
+   display: flex;
+   font-size: 1.4em;
+   z-index: 9999;
+}
+
+#itm:hover{
+   color: lime;
+   filter: drop-shadow(0 0 2px lime) drop-shadow(0 0 5px lime)
+   drop-shadow(0 0 15px lime);
+   z-index: 9999;
+}
+
+.lorem{
+   color: aliceblue;
+}
+
+
+/*! RESPONSIVE PART */
+
+
+@media all and (max-width:769px) {
+   .navbar{
+      height: 100vh;
+      transform: translateX(-11000px);
+      transition: 0.5s;
+      position: absolute;
+      justify-content: space-between;
+   }
+
+   ul{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      
+   }
+  
+   li{
+      font-size: 34px;
+      padding: 8px;
+   }
+ 
+   .menu-btn {
+      position: relative;
+      display: fixed;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      /* border: 3px solid #fff; */
+      margin-top: 12px;
+      margin-right: 12px;
+      z-index: 1000000999999999999;
+      
+    }
+
+    .activemenu{
+      height: 100vh;
+      transition: 0.5s;
+      transform: translateX(0px);
+    }
+
+}
+
+
+
+@media (max-width:386px) {
+   a{
+      display: none;
+   }
+
+   .navbar{
+      justify-content: center;
+   }
+}
+
+@media (max-width:394px) {
+   #itm{
+      font-size:1.8rem;
+   }
+}
+
+
+@media (max-width:387px) {
+   #itm{
+      font: size 1.7em 0.8em;
+   }
+}
+
+@media (max-width:404px) {
+   #itm{
+      font-size: 1.85rem;
+   }
+}
